@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		210861E628FBD38C007AA0EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861E528FBD38C007AA0EC /* AppDelegate.swift */; };
+		210861E828FBD38C007AA0EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861E728FBD38C007AA0EC /* ViewController.swift */; };
+		210861EA28FBD390007AA0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210861E928FBD390007AA0EC /* Assets.xcassets */; };
+		210861ED28FBD390007AA0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210861EB28FBD390007AA0EC /* Main.storyboard */; };
+		210861F828FBD391007AA0EC /* SimpleRSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861F728FBD391007AA0EC /* SimpleRSSTests.swift */; };
+		2108620228FBD391007AA0EC /* SimpleRSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108620128FBD391007AA0EC /* SimpleRSSUITests.swift */; };
+		2108620428FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		210861F428FBD391007AA0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210861DA28FBD38C007AA0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210861E128FBD38C007AA0EC;
+			remoteInfo = SimpleRSS;
+		};
+		210861FE28FBD391007AA0EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 210861DA28FBD38C007AA0EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 210861E128FBD38C007AA0EC;
+			remoteInfo = SimpleRSS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		210861E228FBD38C007AA0EC /* SimpleRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210861E528FBD38C007AA0EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		210861E728FBD38C007AA0EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		210861E928FBD390007AA0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		210861EC28FBD390007AA0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		210861EE28FBD390007AA0EC /* SimpleRSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleRSS.entitlements; sourceTree = "<group>"; };
+		210861F328FBD391007AA0EC /* SimpleRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		210861F728FBD391007AA0EC /* SimpleRSSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRSSTests.swift; sourceTree = "<group>"; };
+		210861FD28FBD391007AA0EC /* SimpleRSSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRSSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2108620128FBD391007AA0EC /* SimpleRSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRSSUITests.swift; sourceTree = "<group>"; };
+		2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRSSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		210861DF28FBD38C007AA0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861F028FBD391007AA0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861FA28FBD391007AA0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		210861D928FBD38C007AA0EC = {
+			isa = PBXGroup;
+			children = (
+				210861E428FBD38C007AA0EC /* SimpleRSS */,
+				210861F628FBD391007AA0EC /* SimpleRSSTests */,
+				2108620028FBD391007AA0EC /* SimpleRSSUITests */,
+				210861E328FBD38C007AA0EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		210861E328FBD38C007AA0EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				210861E228FBD38C007AA0EC /* SimpleRSS.app */,
+				210861F328FBD391007AA0EC /* SimpleRSSTests.xctest */,
+				210861FD28FBD391007AA0EC /* SimpleRSSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		210861E428FBD38C007AA0EC /* SimpleRSS */ = {
+			isa = PBXGroup;
+			children = (
+				210861E528FBD38C007AA0EC /* AppDelegate.swift */,
+				210861E728FBD38C007AA0EC /* ViewController.swift */,
+				210861E928FBD390007AA0EC /* Assets.xcassets */,
+				210861EB28FBD390007AA0EC /* Main.storyboard */,
+				210861EE28FBD390007AA0EC /* SimpleRSS.entitlements */,
+			);
+			path = SimpleRSS;
+			sourceTree = "<group>";
+		};
+		210861F628FBD391007AA0EC /* SimpleRSSTests */ = {
+			isa = PBXGroup;
+			children = (
+				210861F728FBD391007AA0EC /* SimpleRSSTests.swift */,
+			);
+			path = SimpleRSSTests;
+			sourceTree = "<group>";
+		};
+		2108620028FBD391007AA0EC /* SimpleRSSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2108620128FBD391007AA0EC /* SimpleRSSUITests.swift */,
+				2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */,
+			);
+			path = SimpleRSSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		210861E128FBD38C007AA0EC /* SimpleRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2108620728FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSS" */;
+			buildPhases = (
+				210861DE28FBD38C007AA0EC /* Sources */,
+				210861DF28FBD38C007AA0EC /* Frameworks */,
+				210861E028FBD38C007AA0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleRSS;
+			productName = SimpleRSS;
+			productReference = 210861E228FBD38C007AA0EC /* SimpleRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		210861F228FBD391007AA0EC /* SimpleRSSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2108620A28FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSSTests" */;
+			buildPhases = (
+				210861EF28FBD391007AA0EC /* Sources */,
+				210861F028FBD391007AA0EC /* Frameworks */,
+				210861F128FBD391007AA0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				210861F528FBD391007AA0EC /* PBXTargetDependency */,
+			);
+			name = SimpleRSSTests;
+			productName = SimpleRSSTests;
+			productReference = 210861F328FBD391007AA0EC /* SimpleRSSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		210861FC28FBD391007AA0EC /* SimpleRSSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2108620D28FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSSUITests" */;
+			buildPhases = (
+				210861F928FBD391007AA0EC /* Sources */,
+				210861FA28FBD391007AA0EC /* Frameworks */,
+				210861FB28FBD391007AA0EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				210861FF28FBD391007AA0EC /* PBXTargetDependency */,
+			);
+			name = SimpleRSSUITests;
+			productName = SimpleRSSUITests;
+			productReference = 210861FD28FBD391007AA0EC /* SimpleRSSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		210861DA28FBD38C007AA0EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					210861E128FBD38C007AA0EC = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					210861F228FBD391007AA0EC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 210861E128FBD38C007AA0EC;
+					};
+					210861FC28FBD391007AA0EC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 210861E128FBD38C007AA0EC;
+					};
+				};
+			};
+			buildConfigurationList = 210861DD28FBD38C007AA0EC /* Build configuration list for PBXProject "SimpleRSS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 210861D928FBD38C007AA0EC;
+			productRefGroup = 210861E328FBD38C007AA0EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				210861E128FBD38C007AA0EC /* SimpleRSS */,
+				210861F228FBD391007AA0EC /* SimpleRSSTests */,
+				210861FC28FBD391007AA0EC /* SimpleRSSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		210861E028FBD38C007AA0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210861EA28FBD390007AA0EC /* Assets.xcassets in Resources */,
+				210861ED28FBD390007AA0EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861F128FBD391007AA0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861FB28FBD391007AA0EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		210861DE28FBD38C007AA0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210861E828FBD38C007AA0EC /* ViewController.swift in Sources */,
+				210861E628FBD38C007AA0EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861EF28FBD391007AA0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210861F828FBD391007AA0EC /* SimpleRSSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210861F928FBD391007AA0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2108620228FBD391007AA0EC /* SimpleRSSUITests.swift in Sources */,
+				2108620428FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		210861F528FBD391007AA0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210861E128FBD38C007AA0EC /* SimpleRSS */;
+			targetProxy = 210861F428FBD391007AA0EC /* PBXContainerItemProxy */;
+		};
+		210861FF28FBD391007AA0EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 210861E128FBD38C007AA0EC /* SimpleRSS */;
+			targetProxy = 210861FE28FBD391007AA0EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		210861EB28FBD390007AA0EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				210861EC28FBD390007AA0EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2108620528FBD391007AA0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2108620628FBD391007AA0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2108620828FBD391007AA0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleRSS/SimpleRSS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2108620928FBD391007AA0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SimpleRSS/SimpleRSS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2108620B28FBD391007AA0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRSS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleRSS";
+			};
+			name = Debug;
+		};
+		2108620C28FBD391007AA0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleRSS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleRSS";
+			};
+			name = Release;
+		};
+		2108620E28FBD391007AA0EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SimpleRSS;
+			};
+			name = Debug;
+		};
+		2108620F28FBD391007AA0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FW8567YA4Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Goronya.SimpleRSSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SimpleRSS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		210861DD28FBD38C007AA0EC /* Build configuration list for PBXProject "SimpleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108620528FBD391007AA0EC /* Debug */,
+				2108620628FBD391007AA0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2108620728FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108620828FBD391007AA0EC /* Debug */,
+				2108620928FBD391007AA0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2108620A28FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108620B28FBD391007AA0EC /* Debug */,
+				2108620C28FBD391007AA0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2108620D28FBD391007AA0EC /* Build configuration list for PBXNativeTarget "SimpleRSSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2108620E28FBD391007AA0EC /* Debug */,
+				2108620F28FBD391007AA0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 210861DA28FBD38C007AA0EC /* Project object */;
+}
