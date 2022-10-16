@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-SimpleRSS-SimpleRSSUITests/Pods-SimpleRSS-SimpleRSSUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/HTMLReader/HTMLReader.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

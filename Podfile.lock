@@ -1,0 +1,22 @@
+PODS:
+  - HTMLReader (2.2.1)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+
+DEPENDENCIES:
+  - HTMLReader
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - HTMLReader
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  HTMLReader: 1839a8505df3fb7a833e767759a799ce8e210de1
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+
+PODFILE CHECKSUM: 83342a0d8d9211e1f59ce8c14aa20ef03a15afaa
+
+COCOAPODS: 1.11.3
