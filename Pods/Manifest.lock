@@ -1,22 +1,20 @@
 PODS:
-  - HTMLReader (2.2.1)
-  - SDWebImage (4.4.8):
-    - SDWebImage/Core (= 4.4.8)
-  - SDWebImage/Core (4.4.8)
+  - Alamofire (4.9.1)
+  - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
-  - HTMLReader
-  - SDWebImage
+  - Alamofire
+  - SwiftyJSON
 
 SPEC REPOS:
   trunk:
-    - HTMLReader
-    - SDWebImage
+    - Alamofire
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  HTMLReader: 1839a8505df3fb7a833e767759a799ce8e210de1
-  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 83342a0d8d9211e1f59ce8c14aa20ef03a15afaa
+PODFILE CHECKSUM: d4f10b5e75a2a375f3bd42f9f4e8801eb09e18c1
 
 COCOAPODS: 1.11.3
