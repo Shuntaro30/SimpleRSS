@@ -202,7 +202,7 @@
         <!--Window Controller-->
         <scene sceneID="Tsr-05-Sld">
             <objects>
-                <windowController id="TY6-zL-5vX" sceneMemberID="viewController">
+                <windowController id="TY6-zL-5vX" customClass="MainWindowController" customModule="SimpleRSS" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="BBC News" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="MZ5-t6-3Aw">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -282,6 +282,7 @@
                     </connections>
                 </splitViewController>
                 <customObject id="HGL-dI-n1Q" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="c9S-lM-Yma"/>
             </objects>
             <point key="canvasLocation" x="75" y="681"/>
         </scene>
@@ -369,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="-309.5" y="681"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--News View Controller-->
         <scene sceneID="sO8-zh-MnS">
             <objects>
-                <viewController id="Y64-tJ-29B" customClass="FeedViewController" customModule="SimpleRSS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y64-tJ-29B" customClass="NewsViewController" customModule="SimpleRSS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="D4V-wC-GfS">
                         <rect key="frame" x="0.0" y="0.0" width="302" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>

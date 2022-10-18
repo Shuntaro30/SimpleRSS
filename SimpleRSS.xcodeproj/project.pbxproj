@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		210861E628FBD38C007AA0EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861E528FBD38C007AA0EC /* AppDelegate.swift */; };
-		210861E828FBD38C007AA0EC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861E728FBD38C007AA0EC /* FeedViewController.swift */; };
+		210861E828FBD38C007AA0EC /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861E728FBD38C007AA0EC /* NewsViewController.swift */; };
 		210861EA28FBD390007AA0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 210861E928FBD390007AA0EC /* Assets.xcassets */; };
 		210861ED28FBD390007AA0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210861EB28FBD390007AA0EC /* Main.storyboard */; };
 		210861F828FBD391007AA0EC /* SimpleRSSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210861F728FBD391007AA0EC /* SimpleRSSTests.swift */; };
 		2108620228FBD391007AA0EC /* SimpleRSSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108620128FBD391007AA0EC /* SimpleRSSUITests.swift */; };
 		2108620428FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */; };
-		21DD6C3E28FC0ED60082D7BF /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DD6C3D28FC0ED60082D7BF /* SideBarViewController.swift */; };
+		21D0E43128FD5C7B00055DC6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0E43028FD5C7B00055DC6 /* Feed.swift */; };
+		21D0E43328FD5E4500055DC6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0E43228FD5E4500055DC6 /* MainWindowController.swift */; };
+		21DD6C3E28FC0ED60082D7BF /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */; };
 		4608EA9FB2D1D3ADCC7CE665 /* Pods_SimpleRSS_SimpleRSSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291A9C94088EE726DC9490A /* Pods_SimpleRSS_SimpleRSSUITests.framework */; };
 		9FC7C2C2362798FDCA3932FB /* Pods_SimpleRSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02631F24B75A0D0977A02D7E /* Pods_SimpleRSS.framework */; };
 		F61DE63765794EAF6C3812B9 /* Pods_SimpleRSSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA3FC197CB9D64133E3A970 /* Pods_SimpleRSSTests.framework */; };
@@ -42,7 +44,7 @@
 		05D214662C5A903ADEE397C0 /* Pods-SimpleRSS-SimpleRSSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRSS-SimpleRSSUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleRSS-SimpleRSSUITests/Pods-SimpleRSS-SimpleRSSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		210861E228FBD38C007AA0EC /* SimpleRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		210861E528FBD38C007AA0EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		210861E728FBD38C007AA0EC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		210861E728FBD38C007AA0EC /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		210861E928FBD390007AA0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210861EC28FBD390007AA0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		210861EE28FBD390007AA0EC /* SimpleRSS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleRSS.entitlements; sourceTree = "<group>"; };
@@ -52,7 +54,9 @@
 		2108620128FBD391007AA0EC /* SimpleRSSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRSSUITests.swift; sourceTree = "<group>"; };
 		2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRSSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2148C1AA28FBF00600656749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		21DD6C3D28FC0ED60082D7BF /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		21D0E43028FD5C7B00055DC6 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		21D0E43228FD5E4500055DC6 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 		31FA1228310A815A06C6578F /* Pods-SimpleRSS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRSS.debug.xcconfig"; path = "Target Support Files/Pods-SimpleRSS/Pods-SimpleRSS.debug.xcconfig"; sourceTree = "<group>"; };
 		45BCE6804A7F2A9257E96B2B /* Pods-SimpleRSS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRSS.release.xcconfig"; path = "Target Support Files/Pods-SimpleRSS/Pods-SimpleRSS.release.xcconfig"; sourceTree = "<group>"; };
 		5291A9C94088EE726DC9490A /* Pods_SimpleRSS_SimpleRSSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRSS_SimpleRSSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +121,10 @@
 			children = (
 				2148C1AA28FBF00600656749 /* Info.plist */,
 				210861E528FBD38C007AA0EC /* AppDelegate.swift */,
-				210861E728FBD38C007AA0EC /* FeedViewController.swift */,
-				21DD6C3D28FC0ED60082D7BF /* SideBarViewController.swift */,
+				21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */,
+				210861E728FBD38C007AA0EC /* NewsViewController.swift */,
+				21D0E43228FD5E4500055DC6 /* MainWindowController.swift */,
+				21D0E43028FD5C7B00055DC6 /* Feed.swift */,
 				210861E928FBD390007AA0EC /* Assets.xcassets */,
 				210861EB28FBD390007AA0EC /* Main.storyboard */,
 				210861EE28FBD390007AA0EC /* SimpleRSS.entitlements */,
@@ -404,9 +410,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				210861E828FBD38C007AA0EC /* FeedViewController.swift in Sources */,
-				21DD6C3E28FC0ED60082D7BF /* SideBarViewController.swift in Sources */,
+				210861E828FBD38C007AA0EC /* NewsViewController.swift in Sources */,
+				21D0E43128FD5C7B00055DC6 /* Feed.swift in Sources */,
+				21DD6C3E28FC0ED60082D7BF /* SidebarViewController.swift in Sources */,
 				210861E628FBD38C007AA0EC /* AppDelegate.swift in Sources */,
+				21D0E43328FD5E4500055DC6 /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
