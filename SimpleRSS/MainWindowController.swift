@@ -4,6 +4,9 @@
 //
 //  Created by shuntaro on 2022/10/17.
 //
+//  BBC: http://feeds.bbci.co.uk/news/rss.xml
+//  Yahoo: https://news.yahoo.co.jp/rss/topics/top-picks.xml
+//
 
 import Cocoa
 import Alamofire
@@ -14,35 +17,33 @@ class MainWindowController: NSWindowController {
     @IBOutlet weak var popupMenu: NSPopUpButton!
     
     var feeds = [Feed]()
+    var feed: Feed!
+    var user = UserDefaultsController()
+    var sideBar: SidebarViewController!
 
     override func windowDidLoad() {
         super.windowDidLoad()
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
-        feeds.append(Feed(url: "http://feeds.bbci.co.uk/news/rss.xml", title: "Yahoo! News"))
-        var isOK = false
-        request(feeds[0].getJsonURL()).responseData { response in
-            debugPrint(response)
-            print("-----------Feed----------")
-            if let values = response.result.value {
-                print("Processing JSON...")
-                JSON(values)["responseData"]["feed"]["entries"].forEach { i, value in
-                    print(value["title"].string!)
-                    print(value["link"].string!)
-                    print("-------------------------")
-                    isOK = true
-                }
-            } else {
-                print("Error")
-                print(response.result.error ?? "Unknown Error...")
-                print(response.result.error?.localizedDescription ?? "No Description...")
-                print("-------------------------")
-                isOK = true
-            }
-            if !isOK {
-                print("Unknown Error")
-                print("-------------------------")
-            }
+        let splitController = contentViewController as? NSSplitViewController
+        sideBar = splitController?.splitViewItems[0].viewController as? SidebarViewController
+        if let feeds = user.get(.feeds) as? [Feed] {
+            self.feeds = feeds
+        } else {
+            feed = Feed("https://news.yahoo.co.jp/rss/topics/top-picks.xml")
+            user.set(feed!, key: .lastFeed)
         }
+        if let lastFeed = user.get(.lastFeed) as? Feed {
+            feed = lastFeed
+            sideBar.feed = feed
+        } else {
+            feed = feeds[0]
+            user.set(feeds[0], key: .lastFeed)
+            sideBar.feed = feed
+        }
+    }
+    
+    @IBAction func popupDidChange(_ sender: Any?) {
+        
     }
 
 }
