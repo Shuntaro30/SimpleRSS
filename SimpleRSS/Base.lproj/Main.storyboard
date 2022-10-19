@@ -214,17 +214,17 @@
                         </view>
                         <toolbar key="toolbar" implicitIdentifier="73C0EE84-CB02-44BB-866D-BFBE3B4E4C52" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="IJB-OB-wwr">
                             <allowedToolbarItems>
-                                <toolbarItem implicitItemIdentifier="86D49B19-64EF-4320-ADEF-CA8A1F166046" label="" paletteLabel="" title="BBC News" sizingBehavior="auto" id="cou-VL-Kbe">
+                                <toolbarItem implicitItemIdentifier="86D49B19-64EF-4320-ADEF-CA8A1F166046" label="Feed" paletteLabel="Select Feed" sizingBehavior="auto" id="cou-VL-Kbe">
                                     <nil key="toolTip"/>
                                     <popUpButton key="view" verticalHuggingPriority="750" id="vpY-95-qP8" userLabel="BBC News">
-                                        <rect key="frame" x="0.0" y="14" width="99" height="25"/>
+                                        <rect key="frame" x="18" y="14" width="35" height="25"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <popUpButtonCell key="cell" type="roundTextured" title="BBC News" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="oDb-VW-Da0" id="2sq-L4-cVi" userLabel="BBC News">
+                                        <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="oDb-VW-Da0" id="2sq-L4-cVi" userLabel="BBC News">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="menu"/>
                                             <menu key="menu" id="qEX-En-loN">
                                                 <items>
-                                                    <menuItem title="BBC News" state="on" enabled="NO" id="oDb-VW-Da0" userLabel="BBC News"/>
+                                                    <menuItem state="on" enabled="NO" id="oDb-VW-Da0" userLabel="BBC News"/>
                                                 </items>
                                             </menu>
                                         </popUpButtonCell>
@@ -233,18 +233,18 @@
                                         </connections>
                                     </popUpButton>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="B6EEE9F6-8EFC-4FAD-8C36-AAFC633340E4" label="Edit" paletteLabel="Edit" tag="-1" image="pencil" catalog="system" bordered="YES" id="HlI-Ae-dov">
+                                <toolbarItem implicitItemIdentifier="B6EEE9F6-8EFC-4FAD-8C36-AAFC633340E4" label="Remove" paletteLabel="Remove Feed" tag="-1" image="NSRemoveTemplate" bordered="YES" id="HlI-Ae-dov">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="B88C09A7-86EA-4131-9CD7-E8BE794E8169" label="Add" paletteLabel="Add" tag="-1" image="NSAddTemplate" bordered="YES" id="bb4-IW-cJq">
+                                <toolbarItem implicitItemIdentifier="B88C09A7-86EA-4131-9CD7-E8BE794E8169" label="Add" paletteLabel="Add Feed" tag="-1" image="NSAddTemplate" bordered="YES" id="bb4-IW-cJq">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                     <connections>
                                         <segue destination="pjd-oY-mI8" kind="sheet" identifier="showPanel" id="rfj-E6-XiV"/>
                                     </connections>
                                 </toolbarItem>
-                                <toolbarItem implicitItemIdentifier="8C0D7578-9C40-45F9-BC2E-D3FCA5635784" label="Reload" paletteLabel="Reload" tag="-1" image="NSRefreshTemplate" bordered="YES" id="YVA-cE-m1p">
+                                <toolbarItem implicitItemIdentifier="8C0D7578-9C40-45F9-BC2E-D3FCA5635784" label="Refresh" paletteLabel="Refresh Feed" tag="-1" image="NSRefreshTemplate" bordered="YES" id="YVA-cE-m1p">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
                                 </toolbarItem>
@@ -253,8 +253,8 @@
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="cou-VL-Kbe"/>
-                                <toolbarItem reference="bb4-IW-cJq"/>
                                 <toolbarItem reference="HlI-Ae-dov"/>
+                                <toolbarItem reference="bb4-IW-cJq"/>
                                 <toolbarItem reference="YVA-cE-m1p"/>
                             </defaultToolbarItems>
                         </toolbar>
@@ -468,8 +468,6 @@ Gw
                     </view>
                     <connections>
                         <outlet property="textField" destination="wmo-qf-ORp" id="NZC-pF-lxZ"/>
-                        <segue destination="TY6-zL-5vX" kind="custom" identifier="cancel" id="1Sd-Bv-uDN"/>
-                        <segue destination="TY6-zL-5vX" kind="custom" identifier="add" id="fyK-rV-1Mu"/>
                     </connections>
                 </viewController>
                 <customObject id="dqW-Km-DHZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -510,12 +508,9 @@ Gw
             <point key="canvasLocation" x="540" y="681"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="fyK-rV-1Mu"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="NSAddTemplate" width="18" height="17"/>
         <image name="NSRefreshTemplate" width="18" height="21"/>
-        <image name="pencil" catalog="system" width="14" height="13"/>
+        <image name="NSRemoveTemplate" width="18" height="5"/>
     </resources>
 </document>

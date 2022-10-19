@@ -11,20 +11,21 @@ class PanelViewController: NSViewController {
     
     @IBOutlet weak var textField: NSTextField!
     
+    var previousVC: MainWindowController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
     @IBAction func cancel(_ sender: Any) {
-        let previousVC = view.window?.windowController as? MainWindowController
-        previousVC?.addFeed("canceled")
+        previousVC.addFeed("canceled")
         dismiss(self)
     }
     
     @IBAction func add(_ sender: Any) {
-        let previousVC = view.window?.windowController as? MainWindowController
-        previousVC?.addFeed(textField.stringValue)
+        print("Add \(textField.stringValue)")
+        previousVC.addFeed(textField.stringValue)
         dismiss(self)
     }
     

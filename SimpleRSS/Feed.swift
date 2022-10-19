@@ -14,32 +14,25 @@ class Feed: NSObject, NSCoding {
     /// RSS の URL。
     let url: String
     /// RSS のタイトル。
-    var title: String
-    
-    init(_ aURL: String) {
-        url = aURL
+    var title: String {
         var loadTitle = ""
-        let jsonURL = "https://api.rss2json.com/v1/api.json?rss_url=\(url)"
+        let jsonURL = "https://api.rss2json.com/v1/api.json?rss_url=\(self.url)"
         request(jsonURL).responseData { response in
             if let values = response.result.value {
                 let json = JSON(values)
                 loadTitle = json["feed"]["title"].stringValue
+                print(loadTitle)
             }
         }
-        title = loadTitle
+        return loadTitle
+    }
+    
+    init(_ aURL: String) {
+        url = aURL
     }
     
     required init?(coder aDecoder: NSCoder) {
         url = aDecoder.decodeObject(forKey: "url") as! String
-        var loadTitle = ""
-        let jsonURL = "https://api.rss2json.com/v1/api.json?rss_url=\(url)"
-        request(jsonURL).responseData { response in
-            if let values = response.result.value {
-                let json = JSON(values)
-                loadTitle = json["feed"]["title"].stringValue
-            }
-        }
-        title = loadTitle
     }
     
     func encode(with coder: NSCoder) {

@@ -30,6 +30,7 @@ class SidebarViewController: NSViewController, NSTableViewDelegate, NSTableViewD
                     print("Feed from \(json["feed"]["title"])")
                     self.view.window?.title = json["feed"]["title"].stringValue
                     print("--------------------------------------------------")
+                    self.news.removeAll()
                     json["items"].forEach { i, value in
                         self.news.append(News(value["title"].string!, link: value["link"].string!, description: value["content"].string!))
                         print("Title: \(value["title"].string!)")

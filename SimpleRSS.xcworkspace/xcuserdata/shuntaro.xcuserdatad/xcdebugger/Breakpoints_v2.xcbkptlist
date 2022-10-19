@@ -3,4 +3,118 @@
    uuid = "EBE14526-DB59-4BBA-8DCF-F41873733979"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49A6003D-F5B5-41F2-B14C-3B5B0C214C66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleRSS/MainWindowController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "windowDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "49A6003D-F5B5-41F2-B14C-3B5B0C214C66 - 8c8d565d87a0669d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleRSS.MainWindowController.windowDidLoad() -&gt; ()"
+                  moduleName = "SimpleRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuntaro/Documents/Programming/Xcode/Category/News/SimpleRSS/SimpleRSS/MainWindowController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "3356">
+               </Location>
+               <Location
+                  uuid = "49A6003D-F5B5-41F2-B14C-3B5B0C214C66 - 8c8d565d87a0669d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleRSS.MainWindowController.windowDidLoad() -&gt; ()"
+                  moduleName = "SimpleRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuntaro/Documents/Programming/Xcode/Category/News/SimpleRSS/SimpleRSS/MainWindowController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "3576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8914A35D-304B-4E57-B6DC-2661253FD1AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleRSS/MainWindowController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "windowDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5C8E16A-F2F6-4F6A-9D84-6B438631C9A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleRSS/Feed.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "title"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C5C8E16A-F2F6-4F6A-9D84-6B438631C9A8 - d0a8b123e1f2f613"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleRSS.Feed.title.getter : Swift.String"
+                  moduleName = "SimpleRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuntaro/Documents/Programming/Xcode/Category/News/SimpleRSS/SimpleRSS/Feed.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "C5C8E16A-F2F6-4F6A-9D84-6B438631C9A8 - 5f83462f232336a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in SimpleRSS.Feed.title.getter : Swift.String"
+                  moduleName = "SimpleRSS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuntaro/Documents/Programming/Xcode/Category/News/SimpleRSS/SimpleRSS/Feed.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
