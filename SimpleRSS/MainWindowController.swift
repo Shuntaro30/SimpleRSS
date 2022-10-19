@@ -21,7 +21,17 @@ class MainWindowController: NSWindowController {
     @IBOutlet weak var popupMenu: NSPopUpButton!
     
     var feeds = [Feed]()
-    var feed: Feed!
+    var feed: Feed! {
+        didSet {
+            self.feeds.insert(self.feed, at: 0)
+            self.popupMenu.insertItem(withTitle: self.feed.title, at: 0)
+            self.popupMenu.select(self.popupMenu.itemArray[0])
+            self.user.set(self.feed!, key: .lastFeed)
+            self.user.set(self.feeds, key: .feeds)
+            self.sideBar.feed = self.feed
+            self.sideBar.tableView.reloadData()
+        }
+    }
     var user = UserDefaultsController()
     var sideBar: SidebarViewController!
 
@@ -29,8 +39,8 @@ class MainWindowController: NSWindowController {
         super.windowDidLoad()
         // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
         
-        // let appDomain = Bundle.main.bundleIdentifier
-        // UserDefaults.standard.removePersistentDomain(forName: appDomain!)
+        //let appDomain = Bundle.main.bundleIdentifier
+        //UserDefaults.standard.removePersistentDomain(forName: appDomain!)
         
         let splitController = contentViewController as? NSSplitViewController
         sideBar = splitController?.splitViewItems[0].viewController as? SidebarViewController
@@ -70,13 +80,23 @@ class MainWindowController: NSWindowController {
         }
     }
     
-    @IBAction func popupDidChange(_ sender: Any?) {
+    @IBAction func popupDidChange(_ sender: Any) {
         if popupMenu.indexOfSelectedItem >= 0 && popupMenu.indexOfSelectedItem < feeds.count {
             feed = feeds[popupMenu.indexOfSelectedItem]
             sideBar.feed = feed
             window?.title = feed.title
             user.set(feed!, key: .lastFeed)
         }
+    }
+    
+    @IBAction func removeFeed(_ sender: Any) {
+        popupMenu.removeItem(at: popupMenu.indexOfSelectedItem)
+        feeds.remove(at: popupMenu.indexOfSelectedItem)
+        user.set(feeds, key: .feeds)
+    }
+    
+    @IBAction func refresh(_ sender: Any) {
+        sideBar.refresh()
     }
     
     func addFeed(_ url: String) {
@@ -95,14 +115,15 @@ class MainWindowController: NSWindowController {
                 }
             }
             if !contains {
-                feed = Feed(url)
-                feeds.append(feed)
-                popupMenu.addItem(withTitle: feed.title)
-                popupMenu.select(popupMenu.itemArray[0])
-                user.set(feed!, key: .lastFeed)
-                user.set(feeds, key: .feeds)
-                sideBar.feed = feed
-                sideBar.tableView.reloadData()
+                let jsonURL = "https://api.rss2json.com/v1/api.json?rss_url=\(url)"
+                request(jsonURL).responseData { res in
+                    var title = ""
+                    if let values = res.result.value { title = JSON(values)["feed"]["title"].stringValue }
+                    if self.feeds.count < 1 {
+                        self.popupMenu.removeItem(at: 0)
+                    }
+                    self.feed = Feed(url, title: title)
+                }
             } else {
                 DispatchQueue.main.async {
                     let alert = NSAlert()

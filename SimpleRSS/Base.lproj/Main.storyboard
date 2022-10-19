@@ -216,7 +216,7 @@
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="86D49B19-64EF-4320-ADEF-CA8A1F166046" label="Feed" paletteLabel="Select Feed" sizingBehavior="auto" id="cou-VL-Kbe">
                                     <nil key="toolTip"/>
-                                    <popUpButton key="view" verticalHuggingPriority="750" id="vpY-95-qP8" userLabel="BBC News">
+                                    <popUpButton key="view" verticalHuggingPriority="750" misplaced="YES" id="vpY-95-qP8" userLabel="BBC News">
                                         <rect key="frame" x="18" y="14" width="35" height="25"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="oDb-VW-Da0" id="2sq-L4-cVi" userLabel="BBC News">
@@ -236,6 +236,9 @@
                                 <toolbarItem implicitItemIdentifier="B6EEE9F6-8EFC-4FAD-8C36-AAFC633340E4" label="Remove" paletteLabel="Remove Feed" tag="-1" image="NSRemoveTemplate" bordered="YES" id="HlI-Ae-dov">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
+                                    <connections>
+                                        <action selector="removeFeed:" target="TY6-zL-5vX" id="fdW-ps-mue"/>
+                                    </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="B88C09A7-86EA-4131-9CD7-E8BE794E8169" label="Add" paletteLabel="Add Feed" tag="-1" image="NSAddTemplate" bordered="YES" id="bb4-IW-cJq">
                                     <size key="minSize" width="26" height="25"/>
@@ -247,6 +250,9 @@
                                 <toolbarItem implicitItemIdentifier="8C0D7578-9C40-45F9-BC2E-D3FCA5635784" label="Refresh" paletteLabel="Refresh Feed" tag="-1" image="NSRefreshTemplate" bordered="YES" id="YVA-cE-m1p">
                                     <size key="minSize" width="26" height="25"/>
                                     <size key="maxSize" width="26" height="25"/>
+                                    <connections>
+                                        <action selector="refresh:" target="TY6-zL-5vX" id="b8e-WV-gK9"/>
+                                    </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="q7e-jH-h3n"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="aQB-Gz-JHE"/>
@@ -302,13 +308,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="60" horizontalPageScroll="10" verticalLineScroll="60" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1Y-ll-bbD">
-                                <rect key="frame" x="0.0" y="0.0" width="267" height="657"/>
+                                <rect key="frame" x="0.0" y="0.0" width="267" height="759"/>
                                 <clipView key="contentView" drawsBackground="NO" id="ld5-t2-4I2">
-                                    <rect key="frame" x="1" y="1" width="265" height="655"/>
+                                    <rect key="frame" x="1" y="1" width="265" height="757"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" tableStyle="sourceList" selectionHighlightStyle="sourceList" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="60" rowSizeStyle="automatic" viewBased="YES" id="aun-DS-p4b">
-                                            <rect key="frame" x="0.0" y="0.0" width="265" height="655"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="265" height="757"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -412,7 +418,7 @@
                                 <rect key="frame" x="228" y="13" width="59" height="32"/>
                                 <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xT8-IU-oXG">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".HiraKakuInterface-W3"/>
+                                    <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent" base64-UTF8="YES">
 DQ
 </string>
@@ -422,10 +428,10 @@ DQ
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ctR-v9-tlO">
-                                <rect key="frame" x="13" y="13" width="75" height="32"/>
+                                <rect key="frame" x="13" y="13" width="76" height="32"/>
                                 <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lvh-3W-h1c">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".HiraKakuInterface-W3"/>
+                                    <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent" base64-UTF8="YES">
 Gw
 </string>
