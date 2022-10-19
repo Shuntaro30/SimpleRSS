@@ -16,6 +16,8 @@
 		2108620428FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2108620328FBD391007AA0EC /* SimpleRSSUITestsLaunchTests.swift */; };
 		2149F68428FED0A6007F31A1 /* UserDefaultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149F68328FED0A6007F31A1 /* UserDefaultsController.swift */; };
 		2149F68628FEEAC3007F31A1 /* SidebarCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149F68528FEEAC3007F31A1 /* SidebarCellView.swift */; };
+		2149F68B28FF5373007F31A1 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149F68A28FF5373007F31A1 /* News.swift */; };
+		2149F68D28FFCDC1007F31A1 /* PanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149F68C28FFCDC0007F31A1 /* PanelViewController.swift */; };
 		21D0E43128FD5C7B00055DC6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0E43028FD5C7B00055DC6 /* Feed.swift */; };
 		21D0E43328FD5E4500055DC6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D0E43228FD5E4500055DC6 /* MainWindowController.swift */; };
 		21DD6C3E28FC0ED60082D7BF /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */; };
@@ -58,6 +60,8 @@
 		2148C1AA28FBF00600656749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2149F68328FED0A6007F31A1 /* UserDefaultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsController.swift; path = /Users/shuntaro/Documents/Programming/Xcode/Category/News/SimpleRSS/SimpleRSS/UserDefaultsController.swift; sourceTree = "<absolute>"; };
 		2149F68528FEEAC3007F31A1 /* SidebarCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarCellView.swift; sourceTree = "<group>"; };
+		2149F68A28FF5373007F31A1 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = SOURCE_ROOT; };
+		2149F68C28FFCDC0007F31A1 /* PanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelViewController.swift; sourceTree = "<group>"; };
 		21D0E43028FD5C7B00055DC6 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		21D0E43228FD5E4500055DC6 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +132,10 @@
 				21DD6C3D28FC0ED60082D7BF /* SidebarViewController.swift */,
 				210861E728FBD38C007AA0EC /* NewsViewController.swift */,
 				21D0E43228FD5E4500055DC6 /* MainWindowController.swift */,
+				2149F68C28FFCDC0007F31A1 /* PanelViewController.swift */,
 				2149F68328FED0A6007F31A1 /* UserDefaultsController.swift */,
 				2149F68528FEEAC3007F31A1 /* SidebarCellView.swift */,
+				2149F68A28FF5373007F31A1 /* News.swift */,
 				21D0E43028FD5C7B00055DC6 /* Feed.swift */,
 				210861E928FBD390007AA0EC /* Assets.xcassets */,
 				210861EB28FBD390007AA0EC /* Main.storyboard */,
@@ -418,6 +424,8 @@
 			files = (
 				210861E828FBD38C007AA0EC /* NewsViewController.swift in Sources */,
 				21D0E43128FD5C7B00055DC6 /* Feed.swift in Sources */,
+				2149F68D28FFCDC1007F31A1 /* PanelViewController.swift in Sources */,
+				2149F68B28FF5373007F31A1 /* News.swift in Sources */,
 				21DD6C3E28FC0ED60082D7BF /* SidebarViewController.swift in Sources */,
 				210861E628FBD38C007AA0EC /* AppDelegate.swift in Sources */,
 				2149F68628FEEAC3007F31A1 /* SidebarCellView.swift in Sources */,
